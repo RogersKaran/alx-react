@@ -7,3 +7,5 @@ https://www.sitepoint.com/webpack-beginner-guide/
 
 https://docs.npmjs.com/cli/v10/configuring-npm/package-json
 
+https://lodash.com/docs/#debounce
+
