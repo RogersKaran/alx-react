@@ -1,0 +1,53 @@
+/* task_4/dashboard/src/Notifications/Notifications.css */
+
+.Notifications {
+  border: 2px solid #f00;
+  padding: 10px;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  display: none; /* Modified for displayDrawer false */
+}
+
+.menuItem {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* task_4/dashboard/src/App/App.css */
+
+.App {
+  text-align: center;
+}
+
+.Login {
+  display: block; /* Modified for isLoggedIn false */
+  background-color: #f00;
+  width: 200px;
+  margin: auto;
+}
+
+.CourseList {
+  display: none; /* Modified for isLoggedIn false */
+}
+
+/* Additional styles for CourseList component */
+.CourseList table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.CourseList th,
+.CourseList td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.CourseList th {
+  background-color: #f2f2f2;
+}
+
