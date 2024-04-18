@@ -47,7 +47,7 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="App">
+        <div className={css(styles.App)}>
           <div className="heading-section">
             <Notifications listNotifications={this.listNotifications} />
             <Header />
