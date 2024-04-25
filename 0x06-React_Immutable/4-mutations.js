@@ -11,7 +11,7 @@ export const map = Map({
 });
 
 // Use the initial map and hain mutations to create a new modified map
-export const map2 = map
-  .set(2, 'Benjamin')
-  .set(4, 'Oliver');
+export const map2 = map.withMutations((mapItem) => {
+  mapItem.set(2, 'Benjamin').set(4, 'Oliver');
+});
 

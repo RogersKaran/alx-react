@@ -4,7 +4,7 @@ export function getListObject(array) {
   return List(array);
 }
 
-export function addElementToLIst(list, element) {
+export function addElementToList(list, element) {
   return list.push(element);
 }
 

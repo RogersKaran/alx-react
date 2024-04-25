@@ -1,17 +1,8 @@
 import { fromJS } from 'immutable';
 
 export default function accessImmutableObject(object, array) {
-  if (!(object instanceof Map)) return undefined; // Check object if map
+  const mappedObj = fromJS(object);
 
-  let current = object;
-  for (let key of array) {
-    if (current.has(key)) {
-      current = current.get(key); // update current to associated value
-    } else {
-        return undefined; // Key not found
-    }
-  }
-
-  return current;
+  return mappedObj.getIn(array, undefined);
 }
 
